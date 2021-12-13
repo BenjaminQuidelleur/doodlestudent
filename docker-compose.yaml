@@ -25,11 +25,10 @@ services:
         ports:
             - '8080:8080'
         image: quarkus/code-with-quarkus-jvm
-        depends_on:
-            - db
+        restart: always
 
-  
-  
-            
-
+  front:
+        ports:
+            - '80:80'
+        image: front
 
