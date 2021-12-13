@@ -5,5 +5,5 @@ RUN npm install
 RUN npm i -g @angular/cli
 RUN npm run build
 
-FROM nginx
+FROM bunkerity/bunkerized-nginx
 COPY --from=builder /usr/src/app/dist/tlcfront /usr/share/nginx/html

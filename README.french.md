@@ -20,3 +20,16 @@ Une démo de l'application est accessible [ici](https://doodle.diverse-team.fr).
 - Voici une petite [vidéo](https://drive.google.com/file/d/1jxYNfJdtd4r_pDbOthra360ei8Z17tX_/preview) de revue de code de l'application.
 
 Un descriptif du cours, des TPs et des étapes du projet est lui accessible [ici](https://hackmd.diverse-team.fr/s/SJqu5DjSD)
+
+
+
+Build front image 
+
+se placer dans front 
+sudo docker build -t front .
+
+Build back image 
+
+mvn package
+sudo mvn package -DskipTests
+docker build -f src/main/docker/Dockerfile.jvm -t quarkus/code-with-quarkus-jvm .
