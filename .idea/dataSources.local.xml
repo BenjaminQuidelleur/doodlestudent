@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-212.5080.55">
+    <data-source name="api/Hibernate" uuid="b0675ead-cb17-46e0-bc03-55be7bb6584c">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="ATHENA" exact-version="0" />
+      <secret-storage>forget</secret-storage>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>
