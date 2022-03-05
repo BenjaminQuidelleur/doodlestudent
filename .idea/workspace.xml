@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43409b0b-9db9-4457-b3bf-b1929826659c" name="Changes" comment="structure du projet">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="43409b0b-9db9-4457-b3bf-b1929826659c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/docker/Dockerfile.jvm" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/docker/Dockerfile.jvm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +57,7 @@
       <updated>1639473382210</updated>
       <workItem from="1639473386308" duration="39000" />
       <workItem from="1639473438077" duration="31000" />
+      <workItem from="1639569957447" duration="16000" />
     </task>
     <servers />
   </component>
