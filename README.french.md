@@ -22,14 +22,17 @@ Une démo de l'application est accessible [ici](https://doodle.diverse-team.fr).
 Un descriptif du cours, des TPs et des étapes du projet est lui accessible [ici](https://hackmd.diverse-team.fr/s/SJqu5DjSD)
 
 
+## Deploiement
 
-Build front image 
+Pour déployer l'application via docker-compose il faut au préalable construire les images
+du front et du backend si elles n'existent pas déjà.
 
-se placer dans front 
-sudo docker build -t front .
+### Build front image 
 
-Build back image 
+1) se placer dans front 
+2) sudo docker build -t front .
 
-mvn package
-sudo mvn package -DskipTests
-docker build -f src/main/docker/Dockerfile.jvm -t quarkus/code-with-quarkus-jvm .
+### Build back image 
+
+1) sudo mvn package -DskipTests
+2) docker build -f src/main/docker/Dockerfile.jvm -t quarkus/code-with-quarkus-jvm .
