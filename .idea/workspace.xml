@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43409b0b-9db9-4457-b3bf-b1929826659c" name="Changes" comment="maj gitignore et correction erreur Dockerfile.jvm">
+      <change afterPath="$PROJECT_DIR$/api/.github/workflows/github-actions.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.french.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.french.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,18 +57,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\benja\Documents\GitHub\doodlestudent\api" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn package -DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.api/docker-compose.yaml: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yaml: Compose Deployment">
     <configuration name="api" type="QuarkusRunConfigurationType" factoryName="Quarkus">
       <module name="api" />
       <QsMavenRunConfiguration>
@@ -116,8 +123,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.api/docker-compose.yaml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Docker.api/docker-compose.yaml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -133,6 +140,7 @@
       <workItem from="1639473438077" duration="31000" />
       <workItem from="1639569957447" duration="16000" />
       <workItem from="1646491669983" duration="7885000" />
+      <workItem from="1646506156817" duration="3404000" />
     </task>
     <task id="LOCAL-00001" summary="maj gitignore et correction erreur Dockerfile.jvm">
       <created>1646500414229</created>
