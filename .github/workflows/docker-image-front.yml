@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, Dev ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, Dev ]
 
 jobs:
 
@@ -14,7 +14,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: get into directory front
-      run: cd ./front
     - name: Build the Docker image
+      working-directory: ./front
       run: docker build . --tag front
