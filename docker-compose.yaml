@@ -22,13 +22,36 @@ services:
       - "2525:25"
 
   code-with-quarkus-jvm:
-        ports:
-            - '8080:8080'
-        image: quarkus/code-with-quarkus-jvm
-        restart: always
+    ports:
+        - '8080:8080'
+    image: quarkus/code-with-quarkus-jvm
+    restart: always
 
   front:
-        ports:
-            - '80:80'
-        image: front
+    ports:
+        - '80:8080'
+    image: front
+    environment:
+      # Ensemble des endpoints pour lequel il générera des certificats
+        - SERVER_NAME=doodle.diverse-team.fr pad.diverse-team.fr 148.60.11.219 localhost
+        - SERVE_FILES=yes
+        - DISABLE_DEFAULT_SERVER=no
+      # Transmission de l'IP publique vers les containers
+        - PROXY_REAL_IP=yes
+  #      - MAX_CLIENT_SIZE=100m
+  #      - USE_ANTIBOT=captcha
+  # Configuration de letencrypt
+        - AUTO_LETS_ENCRYPT=no
+  # redirect du 80 vers 443 automatique
+        - REDIRECT_HTTP_TO_HTTPS=no
+        - USE_LIMIT_REQ=no
+  # Désactivation http2
+        - HTTP2=no
+  # Paramétrage des entêtes http
+        - FEATURE_POLICY=accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; display-capture 'none'; document-domain 'none'; encrypted-media 'none'; fullscreen 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture 'none'; speaker 'none'; sync-xhr 'self'; usb 'none'; vibrate 'none'; vr 'none'
+    volumes: 
+      - ./front/nginx.conf:/server-confs/api.conf      
+
+
+
 
