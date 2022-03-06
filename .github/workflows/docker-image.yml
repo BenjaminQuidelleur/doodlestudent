@@ -14,9 +14,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: get into api directory
-      run: cd ./api
     - name: maven
+      working-directory: ./api
       run: mvn package -DskipTests
     - name: build docker image
+      working-directory: ./api
       run: docker build -f src/main/docker/Dockerfile.jvm -t quarkus/code-with-quarkus-jvm .
