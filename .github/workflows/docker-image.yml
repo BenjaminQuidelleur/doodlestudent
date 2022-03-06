@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: get into api directory
+      run: cd ./api
+    - name: maven
+      run: mvn package -DskipTests
+    - name: build docker image
+      run: docker build -f src/main/docker/Dockerfile.jvm -t quarkus/code-with-quarkus-jvm .
