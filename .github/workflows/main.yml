@@ -23,5 +23,10 @@ jobs:
     - name: build api docker image
       working-directory: ./api
       run: docker build -f src/main/docker/Dockerfile.jvm -t quarkus/code-with-quarkus-jvm .
-    - name: Deploy
-      run: docker-compose up -d
+    - name: Deploy to Docker Host
+      uses: wshihadeh/docker-deployment-action@v1
+      with:        
+        deployment_mode: docker-compose
+        args: up -d
+        docker_prune: 'true'
+        pull_images_first: 'true'
