@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43409b0b-9db9-4457-b3bf-b1929826659c" name="Changes" comment="maj gitignore et correction erreur Dockerfile.jvm">
-      <change afterPath="$PROJECT_DIR$/api/.github/workflows/github-actions.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.french.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.french.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/api/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
   </component>
@@ -49,6 +47,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="22Goe8uHT4Nknv8ollv0ONMVS73" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
