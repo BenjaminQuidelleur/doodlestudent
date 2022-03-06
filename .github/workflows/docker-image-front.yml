@@ -11,9 +11,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    if: github.ref == 'refs/heads/Dev'
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
+    - name: Build the Docker image    
       working-directory: ./front
       run: docker build . --tag front
