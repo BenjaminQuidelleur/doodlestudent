@@ -36,3 +36,6 @@ du front et du backend si elles n'existent pas déjà.
 
 1) sudo mvn package -DskipTests
 2) docker build -f src/main/docker/Dockerfile.jvm -t quarkus/code-with-quarkus-jvm .
+
+
+test workflow
