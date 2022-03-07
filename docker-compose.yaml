@@ -33,7 +33,7 @@ services:
     image: front
     environment:
       # Ensemble des endpoints pour lequel il générera des certificats
-        - SERVER_NAME=doodle.diverse-team.fr pad.diverse-team.fr
+        - SERVER_NAME=doodle.diverse-team.fr pad.diverse-team.fr 148.60.11.219 localhost
         - SERVE_FILES=yes
         - DISABLE_DEFAULT_SERVER=no
       # Transmission de l'IP publique vers les containers
