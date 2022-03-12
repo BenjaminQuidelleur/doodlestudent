@@ -1,0 +1,28 @@
+services:
+  load_balancer:
+    image: jwilder/nginx-proxy
+    ports:
+      - "8080:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock
+
+
+  app:
+    image: app
+    environment:
+      VIRTUAL_HOST: m
+
+  app:
+    image: app
+    environment:
+      VIRTUAL_HOST: m
+
+  app:
+    image: app
+    environment:
+      VIRTUAL_HOST: m
+
+  app:
+    image: app
+    environment:
+      VIRTUAL_HOST: m
